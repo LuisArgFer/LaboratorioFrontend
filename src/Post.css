@@ -1,0 +1,44 @@
+.post-row {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0.5%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .post-row:hover {
+    opacity: 0.7;
+  }
+  
+  .time-stamp {
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .post-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  button.favorite {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 18px;
+  }
+  
+  button.favorite:before {
+    content: "\2661";
+  }
+  
+  button.favorite.active:before {
+    content: "\2764";
+    color: red;
+  }
